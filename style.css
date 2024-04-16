@@ -20,6 +20,19 @@ body{
     background-image: url(img/wp2922360.jpg);
 }
 
+.main_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 280px;
+    margin-left: 650px;
+    width: 600px;
+    height: 200px;
+    background-color: rgba(27, 38, 59, 0.85);
+    border-radius: 10px;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px; 
@@ -57,6 +70,7 @@ h1 {
     font-size: 16px; 
     line-height: 1.5;
 }
+
 
 .legends_list img {
     width: 500px;
@@ -106,20 +120,6 @@ dl {
     background-color: #97cffd;
 }
 
-
-.mainH1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 280px;
-    margin-left: 650px;
-    width: 600px;
-    height: 200px;
-    background-color: rgba(27, 38, 59, 0.85);
-    border-radius: 10px;
-}
-
 .navigateMenu {
     text-align: center;
 }
@@ -130,6 +130,8 @@ dl {
     margin-right: 20px;
     margin-top: 35px;
 }
+
+
 
 #mainLink
 {
@@ -142,6 +144,34 @@ I + B {
     color: #f7a2a2;
 }
 
-.mainH1 > p {
+.main_div > p {
     color: #97cffd;
 }
+
+.history_img {
+    float: left;
+    margin-right: 20px;
+}
+
+.cars_img{
+    position: absolute;
+    top: 160px;
+    z-index: -1;
+}
+
+.cars_span {
+    background-color: #7366ad;
+}
+
+.legends_list li::before {
+    content: "★";
+}
+
+.legends_table thead tr th::after {
+    content: "♕";
+}
+
+ol li:first-child{
+    color: #7366ad;
+}
+
