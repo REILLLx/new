@@ -9,10 +9,11 @@
     <title>Legends</title>
 </head>
 <body class="legends">
+    
     <h1>Cars that won the hearts of many</h1>
-    <p>The BMW 3 Series, BMW 5 Series, and BMW 7 Series are some of the most iconic models that have won the hearts of car enthusiasts worldwide.</p>
-    <p>These cars are renowned for their performance, luxury, and innovative features.</p>
-    <p>Explore the legendary BMW models and their history.</p>
+    <p class="firstPar">The BMW 3 Series, BMW 5 Series, and BMW 7 Series are some of the most iconic models that have won the hearts of car enthusiasts worldwide.</p>
+    <p class="secondPar">These cars are renowned for their performance, luxury, and innovative features.</p>
+    <p class="remPar">Explore the legendary BMW models and their history.</p>
     <ul class="legends_list">
         <li>BMW 3 Series e34<br>
             <a href="img/Bmw-e34-m5-wikipedia.jpg" target="_blank">
@@ -57,7 +58,7 @@
             </tr>
         </tbody>
     </table>
-    <dl>
+    <dl class="def_list">
         <dt>BMW E34</dt>
         <dd>The BMW E34 is the third generation of the BMW 5 Series, which was produced from November 2, 1987, until 1996. </dd>
         <dt>BMW E39</dt>
@@ -66,5 +67,28 @@
         <dd>The BMW E38 is the third generation of the BMW 7 Series luxury cars and was produced from 1994 until 2001.  </dd>
     </dl>
     <p>Back to <a href="main.html#top">home</a>.</p>
+    <script>
+        alert("Ми раді вітати вас у світі легендарних авто марки BMW!")
+        let q = confirm("Відповісте на одне запитання?")
+        if(q == true){
+            prompt("Яка модель вам більше подобається, E34, E38 або E39?", "E34");
+            alert("Дякуюємо!");
+        }
+        document.write('<p>Legends never die!</p>')
+        let txtel = document.querySelector('h1');
+        let newEl = document.createElement('div');
+        newEl.innerHTML = 'Dive into the bmw world.'
+        txtel.after(newEl)
+        let txtel2 = document.querySelector('.legends_list');
+        let textNode = document.createTextNode('The story is just beginning');
+        txtel2.prepend(textNode)
+        txtel2.append('Let`s dive deeper!')
+        let firstEl = document.querySelector('h2')
+        let secEl = document.createElement('h2');
+        secEl.innerHTML = 'These are several films where these cars took part'
+        firstEl.replaceWith(secEl)
+        let remPar = document.querySelector('.remPar');
+        remPar.remove();
+    </script>
 </body>
 </html>

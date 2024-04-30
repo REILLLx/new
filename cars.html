@@ -22,7 +22,19 @@
         <li>Performance</li>
         <li>Innovative technology</li>
         <li>Luxurious interiors</li>
-    </ol>
+    </ol><!-- Коментарій! -->
     <span class="cars_span">Back to <a href="main.html#top">home</a>.</span>
+    <script>
+        const el = document.querySelector('h1');
+        console.log(el)
+        el.innerHTML = `${el.innerHTML} , make your life better`
+        const el2 = document.querySelector('ol').lastElementChild;
+        console.log(el2)
+        el2.outerHTML = "<li>Luxury life</li>"
+        let el3 = document.querySelector('ol').nextSibling.data;
+        console.log(el3)
+        let el4 = document.querySelector('h1').textContent;
+        console.log(el4)
+    </script>
 </body>
 </html>
